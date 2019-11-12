@@ -8,6 +8,8 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 //设置请求的根路径
 Vue.http.options.root = 'http://www.liulongbin.top:3005'
+//全局设置 post 时表单数据格式组织形式  application/x-www-form-urlencoded
+Vue.http.options.emulateJSON = true
 
 //按需导入Mint-UI中的组件
 import { Header, Swipe, SwipeItem, Button } from 'mint-ui'
@@ -27,6 +29,7 @@ import moment from 'moment'
 Vue.filter('dateFormat', function(dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
   return moment(dataStr).format(pattern)
 })
+
 
 
 Vue.config.productionTip = false
