@@ -11,10 +11,10 @@
 
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/newslist">
           <img src="../../assets/image/menu1.png" alt="">
           <div class="mui-media-body">新闻资讯</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
@@ -43,7 +43,7 @@
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
           <img src="../../assets/image/menu6.png" alt="">
-          <div class="mui-media-body">练习我们</div>
+          <div class="mui-media-body">联系我们</div>
         </a>
       </li>
     </ul>
@@ -68,7 +68,7 @@ export default {
     getLunbotu() {
       //获取轮播图数据的方法
       this.$http
-        .get("http://www.liulongbin.top:3005/api/getlunbo")
+        .get("api/getlunbo")
         .then(res => {
           if (res.body.status === 0) {
             this.lunbotuList = res.body.message;
