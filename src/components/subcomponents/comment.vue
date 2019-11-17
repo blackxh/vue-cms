@@ -51,7 +51,7 @@ export default {
       this.pageIndex++
       this.getComments()
     },
-    postComment() {
+    postComment() { //发表评论
 
       if(this.msg.trim().length === 0) {
         return Toast("评论内容不能为空！")

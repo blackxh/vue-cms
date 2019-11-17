@@ -7,6 +7,10 @@ import ShopcarContainer from '../components/tabbar/ShopcarContainer'
 import SearchContainer from '../components/tabbar/SearchContainer'
 import NewsList from '../components/news/NewsList'
 import NewsInfo from '../components/news/NewsInfo'
+import PhotoList from '../components/photos/PhotoList'
+import PhotoInfo from '../components/photos/PhotoInfo'
+import GoodsList from '../components/goods/GoodsList'
+import GoodsInfo from '../components/goods/GoodsInfo'
 
 
 
@@ -40,6 +44,22 @@ const routes = [
   {
     path: '/home/newsinfo/:id',
     component: NewsInfo
+  },
+  {
+    path: '/home/photolist',
+    component: PhotoList
+  },
+  {
+    path: '/home/photoinfo:id',
+    component: PhotoInfo
+  },
+  {
+    path: '/home/goodslist',
+    component: GoodsList
+  },
+  {
+    path: '/home/goodsinfo/:id',
+    component: GoodsInfo
   }
 ]
 const router = new VueRouter({

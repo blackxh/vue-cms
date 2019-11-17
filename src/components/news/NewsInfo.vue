@@ -7,7 +7,7 @@
     </p>
     <hr>
     <div class="content" v-html="newsinfo.content"></div>
-    <comment-box :id="this.id"></comment-box>
+    <cmt-box :id="this.id"></cmt-box>
   </div>
 </template>
 
@@ -38,7 +38,7 @@
       }
     },
     components: {
-      "comment-box": comment
+      "cmt-box": comment
     }
   }
 </script>
