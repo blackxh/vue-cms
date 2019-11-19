@@ -11,6 +11,9 @@ import PhotoList from '../components/photos/PhotoList'
 import PhotoInfo from '../components/photos/PhotoInfo'
 import GoodsList from '../components/goods/GoodsList'
 import GoodsInfo from '../components/goods/GoodsInfo'
+import GoodsDesc from '../components/goods/GoodsDesc'
+import GoodsComment from '../components/goods/GoodsComment'
+
 
 
 
@@ -60,6 +63,16 @@ const routes = [
   {
     path: '/home/goodsinfo/:id',
     component: GoodsInfo
+  },
+  {
+    path: '/home/goodsdesc/:id',
+    component: GoodsDesc,
+    name: 'goodsdesc'
+  },
+  {
+    path: '/home/goodscomment/:id',
+    component: GoodsComment,
+    name: 'goodscomment'
   }
 ]
 const router = new VueRouter({
